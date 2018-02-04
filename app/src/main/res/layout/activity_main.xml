@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nasi"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nasi"
+        android:fontFamily="sans-serif-condensed"
+
+        android:text="Makan Malam"
+        android:textAlignment="center"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:text="dengan Milea"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nasi"
+        android:text="Nasi Uduk"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="52dp" />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignLeft="@+id/nasi"
+        android:layout_alignStart="@+id/nasi"
+        android:layout_below="@+id/nasi"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/abnormal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eatbus"
+        android:layout_alignBottom="@+id/eatbus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:paddingLeft="20sp"
+        android:text="ABNORMAL"
+        android:onClick="launchSecondActivity"
+        />
+
+    <Button
+        android:id="@+id/eatbus"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jumlah"
+        android:layout_alignStart="@+id/jumlah"
+        android:layout_below="@+id/jumlah"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:paddingLeft="20sp"
+        android:textAlignment="center"
+        android:text="EATBUS"
+        android:onClick="launchSecondActivity2"
+        android:background="@color/colorAccent"
+        />
+
+
+</RelativeLayout>
